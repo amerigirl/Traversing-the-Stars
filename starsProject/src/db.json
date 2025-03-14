@@ -18,50 +18,59 @@
       "id": 3,
       "name": "Cassiopeia",
       "alsoKnownAs": "The Queen",
-      "description": ".",
+      "description": "Shaped like a W or M, Cassiopeia is visible year-round but best seen in autumn and winter.",
       "image": "./cassiopeia.jpg"
     },
     {
       "id": 4,
+      "name": "Leo",
+      "alsoKnownAs": "The Lion",
+      "description": "Representing a lion, Leo is prominent in spring and contains the bright star Regulus.",
+      "image": "./leo.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cygnus",
+      "alsoKnownAs": "The Swan",
+      "description": "Also known as the Northern Cross, Cygnus is best seen in summer and autumn and features the bright star Deneb.",
+      "image": "./cygnus.jpg"
+    },
+    {
+      "id": 6,
       "name": "Ursa Major",
       "alsoKnownAs": "The Big Dipper",
       "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
       "image": "./bigDipper.jpg"
     },
     {
-      "id": 1,
+      "id": 7,
       "name": "Ursa Major",
       "alsoKnownAs": "The Big Dipper",
       "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
       "image": "./bigDipper.jpg"
     },
     {
-      "id": 1,
+      "id": 8,
       "name": "Ursa Major",
       "alsoKnownAs": "The Big Dipper",
       "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
       "image": "./bigDipper.jpg"
     },
     {
-      "id": 1,
+      "id": 9,
       "name": "Ursa Major",
       "alsoKnownAs": "The Big Dipper",
       "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
       "image": "./bigDipper.jpg"
     },
-    {
-      "id": 1,
-      "name": "Ursa Major",
-      "alsoKnownAs": "The Big Dipper",
-      "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-      "image": "./bigDipper.jpg"
-    },
-    {
-      "id": 1,
-      "name": "Ursa Major",
-      "alsoKnownAs": "The Big Dipper",
-      "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-      "image": "./bigDipper.jpg"
-    }
+        {
+          "id": 10,
+          "name": "Ursa Major",
+          "alsoKnownAs": "The Big Dipper",
+          "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
+          "image": "./bigDipper.jpg"
+        }
+    
+
   ]
 }
