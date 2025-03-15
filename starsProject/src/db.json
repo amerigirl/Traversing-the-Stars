@@ -37,38 +37,38 @@
     },
     {
       "id": 6,
-      "name": "Ursa Major",
-      "alsoKnownAs": "The Big Dipper",
-      "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-      "image": "./bigDipper.jpg"
+      "name": "Taurus",
+      "alsoKnownAs": "The Bull",
+      "description": "Taurus: Characterized by the V-shaped Hyades cluster and the bright star Aldebaran, Taurus is visible in winter.",
+      "image": "./taurus.jpg"
     },
     {
       "id": 7,
-      "name": "Ursa Major",
-      "alsoKnownAs": "The Big Dipper",
-      "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-      "image": "./bigDipper.jpg"
+      "name": "Scorpius",
+      "alsoKnownAs": "The Scorpion",
+      "description": "Located near the Milky Way, Scorpius is easily identifiable by its bright red star Antares and is best seen in summer.",
+      "image": "./scorpius.jpg"
     },
     {
       "id": 8,
-      "name": "Ursa Major",
-      "alsoKnownAs": "The Big Dipper",
-      "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-      "image": "./bigDipper.jpg"
+      "name": "Gemini",
+      "alsoKnownAs": "The Twins",
+      "description": "Representing twins, Gemini is prominent in winter and features the bright stars Castor and Pollux.",
+      "image": "./gemini.jpg"
     },
     {
       "id": 9,
-      "name": "Ursa Major",
-      "alsoKnownAs": "The Big Dipper",
-      "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-      "image": "./bigDipper.jpg"
+      "name": "Andromeda",
+      "alsoKnownAs": "The Chained Lady or The Chained Woman",
+      "description": "Home to the Andromeda Galaxy, this constellation is best seen in autumn and winter.",
+      "image": "./andromeda.jpg"
     },
         {
           "id": 10,
-          "name": "Ursa Major",
-          "alsoKnownAs": "The Big Dipper",
-          "description": "Ursa Major is a constellation in the northern sky, named after its resemblance to a great bear. It is one of the most recognizable constellations and contains the famous asterism known as the Big Dipper.",
-          "image": "./bigDipper.jpg"
+          "name": "Canis Major",
+          "alsoKnownAs": "The Great Dog",
+          "description": "Contains Sirius, the brightest star in the night sky, and is visible in winter.",
+          "image": "./canisMajor.jpg"
         }
     
 
