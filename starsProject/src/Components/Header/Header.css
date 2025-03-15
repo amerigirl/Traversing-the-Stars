@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./universe.jpeg");
+  background-image: url("../../../public/universe.jpeg");
   background-size: cover;
   background-position: center;
   height: 15vh;
