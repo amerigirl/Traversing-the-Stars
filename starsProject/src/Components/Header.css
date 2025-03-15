@@ -1,15 +1,30 @@
 .headerContainer {
-    background-image: url("./universe.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: 15vh;
-    padding-top: 5rem;}
+  display: flex;
+align-items: flex-start;
+justify-content: center;
+  background-image: url("./universe.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
+  padding: 5rem;
+
+
+}
 .header {
-    text-align: center;
-    font-size: 2.5rem;}
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  margin-top: auto;
+  padding: 2rem;
+}
+
+.headerText {
+  height: 10hv;
+  background-color: white;
+}
 
 .subTitle {
-    font-size: 1.2rem;
-    text-align: center;
-    color: cornflowerblue;
+  font-size: 1.2rem;
+  text-align: center;
+  color: cornflowerblue;
 }
