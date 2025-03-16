@@ -1,9 +1,29 @@
 import React from "react";
 import "./Button.css";
-import posts from "../../db.json";
+import { useEffect, useState } from "react";
 
 const Button = () => {
-  return <button className="my-button">Sample Text</button>;
+const [star, getStar] = useState([])
+
+  useEffect(() => {
+    fetchStars();
+  },[]);
+
+
+
+  const fetchStars = async () => {
+    let res = await fetch("http://localhost:3000/posts");
+    //always convert to json
+    let data = await res.json();
+
+    console.log(data);
+  };
+
+  return (
+    <div className="my-button">
+      <button className="btn">Sample Text</button>
+    </div>
+  );
 };
 
 export default Button;

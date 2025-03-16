@@ -1,6 +1,13 @@
+.my-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
 
-    .my-button {
-      background-color: rgb(87, 217, 243);
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
+.btn {
+  padding: .7rem;
+background-color: aqua;
+border-radius: 10px;
+}
