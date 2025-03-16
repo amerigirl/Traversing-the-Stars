@@ -1,4 +1,4 @@
-.my-button {
+.card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,8 +6,3 @@
   border-radius: 5px;
 }
 
-.btn {
-  padding: .7rem;
-background-color: aqua;
-border-radius: 10px;
-}
