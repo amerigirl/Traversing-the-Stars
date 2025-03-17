@@ -1,11 +1,11 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
-import Card from "./Components/Card/Card";
-import {useState, useEffect} from 'react';
+import Card from "./Components/Button/Card";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [star, getStar] = useState([]);
+  const [star, setStar] = useState([]);
 
   useEffect(() => {
     fetchStars();
@@ -15,14 +15,14 @@ function App() {
     let res = await fetch("http://localhost:3000/posts");
     //always convert to json
     let data = await res.json();
-
+    setStar(data);
     console.log(data);
   };
   return (
     <div className="body">
       <Header />
       <Landing />
-      <Card/>
+      <Card star={star}/>
     </div>
   );
 }
