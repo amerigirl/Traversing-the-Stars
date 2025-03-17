@@ -24,7 +24,7 @@ function App() {
       <Header />
       <Landing />
       <Card star={star}/>
-      <CardDetails />
+      <CardDetails star={star} selectedStar={selectedStar}/>
     </div>
   );
 }
