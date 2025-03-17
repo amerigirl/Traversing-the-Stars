@@ -1,8 +1,9 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
-import Card from "./Components/Button/Card";
+import Card from "./Components/Card/Card";
 import { useState, useEffect } from "react";
+import CardDetails from "./Components/Card/CardDetails/CardDetails";
 
 function App() {
   const [star, setStar] = useState([]);
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Landing />
       <Card star={star}/>
+      <CardDetails />
     </div>
   );
 }
