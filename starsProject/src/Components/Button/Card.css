@@ -1,9 +1,6 @@
-
 .container {
   display: flex;
   margin-right: 2%;
-
-
 }
 
 .card-container {
@@ -12,7 +9,6 @@
   justify-content: space-between;
   gap: 5px;
   margin: 1% 20%;
- 
 }
 
 .card-item {
@@ -25,14 +21,13 @@
   border: 1px solid #000000;
   border-radius: 5px;
   font-size: large;
-
 }
 
-.img-container{
-margin-right: 2%;
-
+.img-container {
+  margin-right: 2%;
 }
 
-.img{
+.img {
+  height: 15vh;
 
 }
