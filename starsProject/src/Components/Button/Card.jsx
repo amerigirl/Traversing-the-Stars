@@ -3,11 +3,11 @@ import "./Card.css";
 
 const Card = ({ star }) => {
   return (
-    <div>
+    <div className="card-container">
       {star.map((s, index) => {
-        return <div key={index}>
+        return <button key={index} className="card-item">
           {s.name}
-        </div>
+        </button>
       })}
     </div>
   );
