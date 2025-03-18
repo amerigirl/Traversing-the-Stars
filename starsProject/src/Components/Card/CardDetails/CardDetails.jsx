@@ -1,8 +1,9 @@
 import React from "react";
 
 const CardDetails = ({ star, selectedStar }) => {
+    
   return (
-    <div>
+    <div onClick={selectedStar}>
       {star &&
         star
           .filter((s) => s.name === selectedStar)
