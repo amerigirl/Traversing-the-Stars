@@ -9,12 +9,9 @@ function App() {
   const [stars, setStar] = useState([]);
   const [selectedStar, setSelectedStar] = useState({});
 
-
-  const handleStarSelect = (stars) => {
-    setSelectedStar(stars);
-
-  }
-
+  const handleStarSelect = (selectedStar) => {
+    setSelectedStar(selectedStar);
+  };
 
   useEffect(() => {
     fetchStars();
@@ -31,9 +28,8 @@ function App() {
     <div className="body">
       <Header />
       <Landing />
-      <Card stars={stars} onStarSelect={handleStarSelect}/>
-      <CardDetails selectedStar={selectedStar}/>
-  
+      <Card stars={stars} onStarSelect={handleStarSelect} />
+      <CardDetails selectedStar={selectedStar} />
     </div>
   );
 }

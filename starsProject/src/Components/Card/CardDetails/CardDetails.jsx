@@ -7,14 +7,15 @@ const CardDetails = ({ selectedStar }) => {
 
   return (
     <>
+    <div>
+        <img src={selectedStar.image} />
+      </div>
       <div>
         <h2>{selectedStar.name}</h2>
         <p>Also known as: {selectedStar.alsoKnownAs}</p>
         <p>Distance: {selectedStar.description}</p>
       </div>
-      <div>
-        <img src={selectedStar.image} />
-      </div>
+      
     </>
   );
 };
