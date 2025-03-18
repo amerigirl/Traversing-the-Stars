@@ -2,26 +2,20 @@ import React from "react";
 import "./Card.css";
 import { useState } from "react";
 
-const Card = ({ star }) => {
-    console.log("Card component rendered with star data:", star);
-  const [starChoice, setStarChoice] = useState("");
-
-  const handleCardDetails = () => {
-    setStarChoice(star);
-  };
+const Card = ({ stars, onStarSelect }) => {
   
   return (
     <>
       <div className="container">
         <div className="card-container">
-          {star && star.map((s, index) => {
+          {stars && stars.map((star, index) => {
             return (
               <button
-                onClick={handleCardDetails}
                 key={index}
                 className="card-item"
+                onClick={() => onStarSelect(star)}
               >
-                {s.name}
+                {star.name}
               </button>
             );
           })}

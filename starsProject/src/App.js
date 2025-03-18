@@ -6,7 +6,15 @@ import { useState, useEffect } from "react";
 import CardDetails from "./Components/Card/CardDetails/CardDetails";
 
 function App() {
-  const [star, setStar] = useState([]);
+  const [stars, setStar] = useState([]);
+  const [selectedStar, setSelectedStar] = useState({});
+
+
+  const handleStarSelect = (stars) => {
+    setSelectedStar(stars);
+
+  }
+
 
   useEffect(() => {
     fetchStars();
@@ -23,7 +31,8 @@ function App() {
     <div className="body">
       <Header />
       <Landing />
-      <Card star={star}/>
+      <Card stars={stars} onStarSelect={handleStarSelect}/>
+      <CardDetails selectedStar={selectedStar}/>
   
     </div>
   );
