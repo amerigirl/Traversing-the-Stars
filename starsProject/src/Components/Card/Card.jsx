@@ -9,11 +9,7 @@ const Card = ({ stars }) => {
 
   const selectedStar = stars.find((star) => star.id === selectedStarId);
 
-  console.log("Selected Star ID:", selectedStarId);
-  console.log("Selected Star:", selectedStar);
-  useEffect(() => {
-    console.log("Selected Star ID updated:", selectedStarId);
-  }, [selectedStarId]);
+
   return (
     <>
       <div className="container">
