@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card.css";
-import { useState } from "react";
 
 const Card = ({ stars, onStarSelect }) => {
   
