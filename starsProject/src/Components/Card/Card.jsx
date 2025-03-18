@@ -1,24 +1,41 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./Card.css";
+import CardDetails from "./CardDetails/CardDetails";
 
-const Card = ({ stars, onStarSelect }) => {
-  
+const Card = ({ stars }) => {
+  console.log("Stars", stars);
+  const [selectedStarId, setSelectedStarId] = useState(null);
+
+  const selectedStar = stars.find((star) => star.id === selectedStarId);
+
+  console.log("Selected Star ID:", selectedStarId);
+  console.log("Selected Star:", selectedStar);
+  useEffect(() => {
+    console.log("Selected Star ID updated:", selectedStarId);
+  }, [selectedStarId]);
   return (
     <>
       <div className="container">
         <div className="card-container">
-          {stars && stars.map((star, index) => {
+          {stars.map((star) => {
+            console.log("Selected Star ID:", selectedStarId);
             return (
               <button
-                key={index}
+                key={star.id}
                 className="card-item"
-                onClick={() => onStarSelect(star)}
+                onClick={() => {
+                  console.log("Clicking star with ID:", star.id);
+
+                  setSelectedStarId(star.id);
+                }}
               >
                 {star.name}
               </button>
             );
           })}
         </div>
+
         <div className="img-container">
           <img
             className="img"
@@ -27,6 +44,7 @@ const Card = ({ stars, onStarSelect }) => {
           />
         </div>
       </div>
+      <div>{selectedStar && <CardDetails selectedStar={selectedStar} />}</div>
     </>
   );
 };

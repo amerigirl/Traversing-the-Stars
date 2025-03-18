@@ -1,9 +1,11 @@
 import React from "react";
 
 const CardDetails = ({ selectedStar }) => {
-  // if (!selectedStar) {
-  //   return <div>Select a star to view details</div>;
-  // }
+    console.log("CardDetails received star:", selectedStar);
+
+  if (!selectedStar) {
+    return <div>Select a star to view details</div>;
+  }
 
   return (
     <>

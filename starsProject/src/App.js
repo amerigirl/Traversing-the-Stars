@@ -3,11 +3,9 @@ import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
 import Card from "./Components/Card/Card";
 import { useState, useEffect } from "react";
-import CardDetails from "./Components/Card/CardDetails/CardDetails";
 
 function App() {
   const [stars, setStar] = useState([]);
-  const [selectedStar, setSelectedStar] = useState({});
 
 
   useEffect(() => {
@@ -19,14 +17,12 @@ function App() {
     //always convert to json
     let data = await res.json();
     setStar(data);
-    console.log(data);
   };
   return (
     <div className="body">
       <Header />
       <Landing />
-      <Card stars={stars} onStarSelect={setSelectedStar} />
-      <CardDetails selectedStar={selectedStar} />
+      <Card stars={stars} />
     </div>
   );
 }
