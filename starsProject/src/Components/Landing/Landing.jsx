@@ -23,7 +23,7 @@ const Landing = () => {
         much more.
         <br></br>
         <br></br>
-        Click a button below, then scroll down to learn about one of the top 10
+        Click below to learn about one of the top 10
         constellations in our solar system!
       </div>
     </div>
