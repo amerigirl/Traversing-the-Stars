@@ -1,25 +1,28 @@
-.cd-container-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-    width: 80vh;
-    margin-top: 2rem;
-    gap:2rem;
-    background-color:rgb(31, 149, 100);
-    margin-bottom: 5rem;
-    margin-left:15%;
-    border-radius: 15px;
-
+.cd-container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 60vh;
+  margin-top: 2rem;
+  gap: 2rem;
+  background-color: rgb(31, 149, 100);
+  margin-bottom: 5rem;
+  margin-left: 15%;
+  border-radius: 15px;
 }
 
-.cd-container{
-    background-color: white;
-    border-radius: 15px;
-
+.cd-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 15px;
+  margin: 9rem;
 }
 
-.cd-img{
-height: 15rem;
-width: 15rem;
+.cd-img {
+  height: 15rem;
+  width: 15rem;
+  margin-left: 2rem;
 }

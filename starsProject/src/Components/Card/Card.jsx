@@ -9,7 +9,6 @@ const Card = ({ stars }) => {
 
   const selectedStar = stars.find((star) => star.id === selectedStarId);
 
-
   return (
     <>
       <div className="container">
@@ -32,15 +31,8 @@ const Card = ({ stars }) => {
           })}
         </div>
 
-        <div className="img-container">
-          <img
-            className="img"
-            alt="watchingTheStars"
-            src="./LookingAtConstellations.jpeg"
-          />
-        </div>
+        <div>{selectedStar && <CardDetails selectedStar={selectedStar} />}</div>
       </div>
-      <div>{selectedStar && <CardDetails selectedStar={selectedStar} />}</div>
     </>
   );
 };

@@ -11,15 +11,19 @@ const CardDetails = ({ selectedStar }) => {
   return (
     <>
       <div className="cd-container-main">
+
         <div className="cd-container">
+          
           <div>
             <img className="cd-img" src={selectedStar.image} />
           </div>
+
           <div className="card-info">
             <h2>{selectedStar.name}</h2>
             <p>Also known as: {selectedStar.alsoKnownAs}</p>
             <p>Distance: {selectedStar.description}</p>
           </div>
+
         </div>
       </div>
     </>
