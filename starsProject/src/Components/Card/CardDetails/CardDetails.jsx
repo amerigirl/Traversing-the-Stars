@@ -20,8 +20,8 @@ const CardDetails = ({ selectedStar }) => {
 
           <div className="card-info">
             <h2>{selectedStar.name}</h2>
-            <p>Also known as: {selectedStar.alsoKnownAs}</p>
-            <p>Distance: {selectedStar.description}</p>
+            <p><strong>Also Known As: </strong>{selectedStar.alsoKnownAs}</p>
+            <p><strong>Distance: </strong>{selectedStar.description}</p>
           </div>
 
         </div>
