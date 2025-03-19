@@ -1,7 +1,8 @@
 import React from "react";
+import "./CardDetails.css";
 
 const CardDetails = ({ selectedStar }) => {
-    console.log("CardDetails received star:", selectedStar);
+  console.log("CardDetails received star:", selectedStar);
 
   if (!selectedStar) {
     return <div>Select a star to view details</div>;
@@ -9,15 +10,18 @@ const CardDetails = ({ selectedStar }) => {
 
   return (
     <>
-    <div className="container">
-        <img className="img" src={selectedStar.image} />
+      <div className="cd-container-main">
+        <div className="cd-container">
+          <div>
+            <img className="cd-img" src={selectedStar.image} />
+          </div>
+          <div className="card-info">
+            <h2>{selectedStar.name}</h2>
+            <p>Also known as: {selectedStar.alsoKnownAs}</p>
+            <p>Distance: {selectedStar.description}</p>
+          </div>
+        </div>
       </div>
-      <div className="card-info">
-        <h2>{selectedStar.name}</h2>
-        <p>Also known as: {selectedStar.alsoKnownAs}</p>
-        <p>Distance: {selectedStar.description}</p>
-      </div>
-      
     </>
   );
 };
