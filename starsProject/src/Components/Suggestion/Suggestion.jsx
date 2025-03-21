@@ -7,21 +7,25 @@ const Suggestion = () => {
   const [constellation, setConstellation] = useState("");
   const [comment, setComment] = useState("");
   const [suggestion, setSuggestion] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSuggestion = () => {
+        setIsSubmitted(true);
+
     if (name && constellation) {
       setSuggestion({ name, constellation, comment });
       setName("");
       setConstellation("");
       setComment("");
-    }
+          setIsSubmitted(false);
 
+    }
     console.log(name, constellation, comment);
   };
 
   return (
     <div className="sug-container">
-      <div className="inputText">
+      <div className="input-text">
         <p>
           Do you have a favorite constellation that you'd like added to the
           list? Fill out the form below to make a suggestion!
@@ -29,31 +33,34 @@ const Suggestion = () => {
         <div className="input-fields">
           <input
             className="input"
-            placeholder="Name"
+            placeholder="  Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
 
           <input
             className="input"
-            placeholder="Constellation"
+            placeholder="  Constellation"
             value={constellation}
             onChange={(e) => setConstellation(e.target.value)}
           />
 
           <textarea
-            className="input"
-            placeholder="Comment"
+            className="textarea"
+            placeholder="  Comment"
             value={comment}
             onChange={(e) => setComment(e.target.value)}
+      
+
           />
         </div>
-         {(!name || !constellation) && <p>Name and constellation are required! </p>}
+        {isSubmitted && (!name || !constellation) && (
+          <p>Name and constellation are required! </p>
+        )}
         <button className="btn" onClick={handleSuggestion}>
           Submit
         </button>
       </div>
-     
     </div>
   );
 };
