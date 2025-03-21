@@ -24,7 +24,7 @@ const Landing = () => {
         <br></br>
         <br></br>
         Click below to learn about one of the top 10
-        constellations in our solar system!
+        constellations in our solar system! If you want suggest a new constellation, <strong> scroll to the bottom of the page</strong> and add your constellation suggestion below!
       </div>
     </div>
   );

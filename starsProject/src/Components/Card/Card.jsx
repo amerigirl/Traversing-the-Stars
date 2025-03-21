@@ -30,7 +30,6 @@ const Card = ({ stars }) => {
             );
           })}
         </div>
-
         <div>{selectedStar && <CardDetails selectedStar={selectedStar} />}</div>
       </div>
     </>
