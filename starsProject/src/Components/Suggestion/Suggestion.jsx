@@ -6,15 +6,18 @@ const Suggestion = () => {
   const [name, setName] = useState("");
   const [constellation, setConstellation] = useState("");
   const [comment, setComment] = useState("");
-  const [suggestion, setSuggestion] = useState({})
+  const [suggestion, setSuggestion] = useState({});
 
-  const handleSuggestion = (e) => {
+  const handleSuggestion = () => {
+    if (name && constellation) {
+      setSuggestion({ name, constellation, comment });
+      setName("");
+      setConstellation("");
+      setComment("");
+    }
 
-setSuggestion({
-    
-})
-
-  }
+    console.log(name, constellation, comment);
+  };
 
   return (
     <div className="sug-container">
@@ -25,25 +28,32 @@ setSuggestion({
         </p>
         <div className="input-fields">
           <input
+            className="input"
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
 
           <input
+            className="input"
             placeholder="Constellation"
             value={constellation}
             onChange={(e) => setConstellation(e.target.value)}
           />
 
           <textarea
+            className="input"
             placeholder="Comment"
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
         </div>
-        <button onClick={(e) => handleSuggestion(e)}>Submit</button>
+         {(!name || !constellation) && <p>Name and constellation are required! </p>}
+        <button className="btn" onClick={handleSuggestion}>
+          Submit
+        </button>
       </div>
+     
     </div>
   );
 };

@@ -1,10 +1,21 @@
 .sug-container{
     margin-bottom: 5rem;
+    width: 40%;
+    margin-left: 3%;
+
 }
 
 .input-fields{
     display: grid;
-    max-width: 15vw;
-    gap: 10px;
-    margin: 2rem; 
+    max-width: 20vw;
+    height: 180px;
+    gap: 15px;
+    margin: 2rem 0 5%; 
+     
+}
+
+.btn{
+        margin-bottom: 15%;
+        padding: 2%;
+
 }
