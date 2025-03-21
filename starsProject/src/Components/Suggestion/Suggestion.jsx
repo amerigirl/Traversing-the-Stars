@@ -3,7 +3,7 @@ import "./Suggest.css";
 
 const Suggestion = () => {
   return (
-    <div className="container">
+    <div className="sug-container">
       <div className="inputText">
         <p>
           Do you have a favorite constellation that you'd like added to the

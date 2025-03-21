@@ -1,0 +1,10 @@
+.sug-container{
+    margin-bottom: 5rem;
+}
+
+.input-fields{
+    display: grid;
+    max-width: 15vw;
+    gap: 10px;
+    margin: 2rem; 
+}
