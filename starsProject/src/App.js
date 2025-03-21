@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
 import Card from "./Components/Card/Card";
 import { useState, useEffect } from "react";
+import Suggestion from "./Components/Suggestion/Suggestion";
 
 function App() {
   const [stars, setStars] = useState([]);
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Landing />
       <Card stars={stars} />
+      <Suggestion />
       
     </div>
   );
