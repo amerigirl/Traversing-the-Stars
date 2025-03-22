@@ -18,6 +18,7 @@ const Suggestion = () => {
       setConstellation("");
       setComment("");
           setIsSubmitted(false);
+          alert("Your submission was made!")
 
     }
     console.log(name, constellation, comment);
