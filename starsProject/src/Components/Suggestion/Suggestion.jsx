@@ -2,6 +2,12 @@ import React from "react";
 import "./Suggest.css";
 import { useState } from "react";
 
+/**
+ * The Suggestion component is responsible for rendering the suggestion form.When the user clicks the submit button, the form data is stored in the suggestion state.
+ * 
+ * This component is incomplete as it does not currently save the suggestion.
+ */       
+
 const Suggestion = () => {
   const [name, setName] = useState("");
   const [constellation, setConstellation] = useState("");

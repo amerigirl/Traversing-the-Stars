@@ -1,6 +1,10 @@
 import React from "react";
 import "../Header/Header.css";
 
+/**
+ * The Header component is responsible for rendering the header of the application.
+ */
+
 const Header = () => {
   return (
     <div className="headerContainer">

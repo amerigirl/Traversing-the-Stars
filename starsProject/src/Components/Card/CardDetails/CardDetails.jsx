@@ -1,6 +1,10 @@
 import React from "react";
 import "./CardDetails.css";
 
+/*
+The CardDetails component is a child component of the Card component. It is responsible for displaying the details of the selected star. 
+*/
+
 const CardDetails = ({ selectedStar }) => {
   console.log("CardDetails received star:", selectedStar);
 

@@ -1,6 +1,10 @@
 import React from "react";
 import "./Landing.css";
 
+/**
+ * The Landing component is responsible for rendering the landing page of the application. It contains the main text for the page.
+ */
+
 const Landing = () => {
   return (
     <div className="landingContainer">

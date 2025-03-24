@@ -1,8 +1,11 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Card.css";
 import CardDetails from "./CardDetails/CardDetails";
 
+/**
+ The Card component is responsible for displaying the list of stars and handling the selection of a star.  
+ */
 const Card = ({ stars }) => {
   console.log("Stars", stars);
   const [selectedStarId, setSelectedStarId] = useState(null);
